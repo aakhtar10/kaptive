@@ -1,0 +1,81 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Reddit+Mono:wght@200..900&display=swap');
+
+body {
+  font-family: "Reddit Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* SalesTable.css */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+thead{
+  border: 1px solid black;
+}
+ td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+
+  background-color: #7abdfc;
+}
+
+
+.bar-chart {  
+  margin: auto;
+  padding: 8px;
+  max-height: 400px;
+  
+}
+.chart{
+ margin: auto;
+  width: 100%;
+}
+
+/* ButtonStyles.css */
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.button-container button {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.button-container button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.button-container button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.button-container svg {
+  margin-right: 5px;
+}
